@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Conestoga Outdoors Club</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/contact-enhanced.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Page Transition Elements -->
+    <div class="page-transition-container">
+        <div class="page-transition-left"></div>
+        <div class="page-transition-right"></div>
+    </div>
+    
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Conestoga Outdoors Club</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section with Enhanced Artistic Elements -->
+    <section class="hero contact-hero">
+        <!-- Geometric elements -->
+        <div class="geometric-elements">
+            <div class="geo-element geo-square geo-1"></div>
+            <div class="geo-element geo-circle geo-2"></div>
+            <div class="geo-element geo-triangle geo-3"></div>
+            <div class="geo-element geo-square geo-4"></div>
+        </div>
+        
+        <!-- Connect points animation (added via JS) -->
+        <div class="connect-points" id="connect-points"></div>
+        
+        <div class="container">
+            <h2 data-aos="fade-up">Get In Touch</h2>
+            <p data-aos="fade-up" data-aos-delay="100">Have questions or want to join? We'd love to hear from you!</p>
+        </div>
+        
+        <!-- Diagonal wave separator -->
+        <div class="diagonal-wave">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <!-- Background elements -->
+        <div class="bg-texture"></div>
+        <div class="bg-orb bg-orb-1"></div>
+        <div class="bg-orb bg-orb-2"></div>
+        
+        <div class="container">
+            <div class="contact-container">
+                <div class="contact-info" data-aos="fade-right">
+                    <h2 class="section-heading">Contact Information</h2>
+                    <p>Reach out to us for any questions about membership, upcoming events, or simply to say hello. We're here to help you get started on your outdoor adventure journey!</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method" data-aos="fade-up">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h3>Email</h3>
+                                <p>outdoorsclub@conestoga.ca</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method" data-aos="fade-up" data-aos-delay="100">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h3>Office Location</h3>
+                                <p>Student Center, Room 203<br>Conestoga College<br>Kitchener, ON</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method" data-aos="fade-up" data-aos-delay="200">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h3>Club Meetings</h3>
+                                <p>Every Thursday at 5:00 PM<br>Student Center, Room 203</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method" data-aos="fade-up" data-aos-delay="300">
+                            <i class="fas fa-hashtag"></i>
+                            <div>
+                                <h3>Social Media</h3>
+                                <p>Follow us for the latest updates and photos!</p>
+                                <div class="social-icons">
+                                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                                    <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container" data-aos="fade-left" data-aos-delay="200">
+                    <h2 class="section-heading">Send Us a Message</h2>
+                    
+                    <form class="contact-form" id="contactForm">
+                        <!-- Loading indicator -->
+                        <div class="loading-indicator">
+                            <div class="loading-spinner"></div>
+                        </div>
+                        
+                        <div class="form-group form-floating">
+                            <input type="text" id="name" name="name" placeholder=" " required>
+                            <label for="name">Your Name</label>
+                        </div>
+                        
+                        <div class="form-group form-floating">
+                            <input type="email" id="email" name="email" placeholder=" " required>
+                            <label for="email">Your Email</label>
+                        </div>
+                        
+                        <div class="form-group form-floating">
+                            <input type="text" id="subject" name="subject" placeholder=" " required>
+                            <label for="subject">Subject</label>
+                        </div>
+                        
+                        <div class="form-group form-floating">
+                            <textarea id="message" name="message" rows="5" placeholder=" " required></textarea>
+                            <label for="message">Your Message</label>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <h2 class="section-heading" data-aos="fade-up">Find Us</h2>
+            
+            <div class="map-container" data-aos="zoom-in" data-aos-delay="100">
+                <!-- This would typically be replaced with a real map embed from Google Maps -->
+                <img src="images/campus-map.jpg" alt="Campus Map">
+                
+                <div class="map-overlay">
+                    <h3>Conestoga College</h3>
+                    <p>Student Center, Room 203<br>299 Doon Valley Drive<br>Kitchener, ON N2G 4M4</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Success message popup -->
+    <div class="success-message" id="successMessage">
+        <i class="fas fa-check-circle"></i>
+        <span>Your message has been sent successfully!</span>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section" data-aos="fade-up">
+                    <h3>Conestoga Outdoors Club</h3>
+                    <p>Bringing adventure to campus since 2010</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section" data-aos="fade-up" data-aos-delay="100">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section" data-aos="fade-up" data-aos-delay="200">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-envelope"></i> outdoorsclub@conestoga.ca</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Student Center, Room 203</p>
+                    <p><i class="fas fa-clock"></i> Meetings: Thursdays at 5 PM</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Conestoga Outdoors Club. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    
+    <!-- Contact page specific JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Create animated connect points in hero section
+            const connectPointsContainer = document.getElementById('connect-points');
+            const pointsCount = 20;
+            const points = [];
+            
+            // Create random points
+            for (let i = 0; i < pointsCount; i++) {
+                const point = document.createElement('div');
+                point.classList.add('point');
+                
+                // Random position
+                const x = Math.random() * 100;
+                const y = Math.random() * 100;
+                
+                point.style.left = `${x}%`;
+                point.style.top = `${y}%`;
+                
+                // Store point data for animation
+                points.push({
+                    element: point,
+                    x: x,
+                    y: y,
+                    speedX: (Math.random() - 0.5) * 0.1,
+                    speedY: (Math.random() - 0.5) * 0.1
+                });
+                
+                connectPointsContainer.appendChild(point);
+            }
+            
+            // Animate points
+            function animatePoints() {
+                // Update point positions
+                points.forEach(point => {
+                    point.x += point.speedX;
+                    point.y += point.speedY;
+                    
+                    // Bounce off edges
+                    if (point.x < 0 || point.x > 100) point.speedX *= -1;
+                    if (point.y < 0 || point.y > 100) point.speedY *= -1;
+                    
+                    // Apply new position
+                    point.element.style.left = `${point.x}%`;
+                    point.element.style.top = `${point.y}%`;
+                });
+                
+                // Request next frame
+                requestAnimationFrame(animatePoints);
+            }
+            
+            // Start animation
+            animatePoints();
+            
+            // Form submission handling
+            const contactForm = document.getElementById('contactForm');
+            const loadingIndicator = document.querySelector('.loading-indicator');
+            const successMessage = document.getElementById('successMessage');
+            
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // Show loading indicator
+                    loadingIndicator.style.display = 'flex';
+                    
+                    // Simulate form submission (would normally be an AJAX request)
+                    setTimeout(() => {
+                        // Hide loading indicator
+                        loadingIndicator.style.display = 'none';
+                        
+                        // Show success message
+                        successMessage.classList.add('show');
+                        
+                        // Reset form
+                        contactForm.reset();
+                        
+                        // Hide success message after 5 seconds
+                        setTimeout(() => {
+                            successMessage.classList.remove('show');
+                        }, 5000);
+                    }, 1500);
+                });
+            }
+            
+            // Floating label effect
+            const formInputs = document.querySelectorAll('.form-floating input, .form-floating textarea');
+            
+            formInputs.forEach(input => {
+                // Check initial state
+                if (input.value !== '') {
+                    input.classList.add('has-value');
+                }
+                
+                // Add change event listeners
+                input.addEventListener('input', function() {
+                    if (this.value !== '') {
+                        this.classList.add('has-value');
+                    } else {
+                        this.classList.remove('has-value');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

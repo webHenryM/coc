@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Conestoga Outdoors Club</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/gallery-enhanced.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Page Transition Elements -->
+    <div class="page-transition-container">
+        <div class="page-transition-left"></div>
+        <div class="page-transition-right"></div>
+    </div>
+    
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Conestoga Outdoors Club</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="gallery.html" class="active">Gallery</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section with Enhanced Artistic Elements -->
+    <section class="hero gallery-hero">
+        <!-- Dynamic pattern overlay -->
+        <div class="hero-pattern"></div>
+        
+        <!-- Spotlight effect -->
+        <div class="spotlight"></div>
+        
+        <div class="container">
+            <h2 data-aos="fade-up">Our Adventures in Pictures</h2>
+            <p data-aos="fade-up" data-aos-delay="100">Explore photos from our recent trips and outdoor experiences.</p>
+        </div>
+        
+        <!-- Wave separator -->
+        <div class="wave-separator">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Gallery Section with Interactive Elements -->
+    <section class="gallery-section">
+        <!-- Background decorative elements -->
+        <div class="bg-element bg-circle bg-circle-1"></div>
+        <div class="bg-element bg-circle bg-circle-2"></div>
+        <div class="bg-element bg-line bg-line-1"></div>
+        <div class="bg-element bg-line bg-line-2"></div>
+        
+        <div class="container">
+            <div class="gallery-controls">
+                <h2 class="section-heading" data-aos="fade-up">Photo Gallery</h2>
+                <div class="gallery-filter" data-aos="fade-up" data-aos-delay="100">
+                    <button class="filter-btn active" data-filter="all">All Photos</button>
+                    <button class="filter-btn" data-filter="hiking">Hiking</button>
+                    <button class="filter-btn" data-filter="camping">Camping</button>
+                    <button class="filter-btn" data-filter="water">Water Activities</button>
+                    <button class="filter-btn" data-filter="winter">Winter</button>
+                </div>
+            </div>
+            
+            <div class="gallery-grid">
+                <!-- Hiking Photos -->
+                <div class="gallery-item hiking" data-aos="zoom-in">
+                    <div class="gallery-badge">Hiking</div>
+                    <img src="images/gallery/hiking1.jpg" alt="Bruce Trail Hike">
+                    <div class="gallery-caption">
+                        <h3>Bruce Trail Hike</h3>
+                        <p>Spring 2024</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item hiking" data-aos="zoom-in" data-aos-delay="150">
+                    <div class="gallery-badge">Hiking</div>
+                    <img src="images/gallery/hiking2.jpg" alt="Rattlesnake Point">
+                    <div class="gallery-caption">
+                        <h3>Rattlesnake Point</h3>
+                        <p>Fall 2024</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item hiking" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="gallery-badge">Hiking</div>
+                    <img src="images/gallery/hiking3.jpg" alt="Niagara Escarpment">
+                    <div class="gallery-caption">
+                        <h3>Niagara Escarpment</h3>
+                        <p>Summer 2024</p>
+                    </div>
+                </div>
+                
+                <!-- Camping Photos -->
+                <div class="gallery-item camping" data-aos="zoom-in" data-aos-delay="50">
+                    <div class="gallery-badge">Camping</div>
+                    <img src="images/gallery/camping1.jpg" alt="Algonquin Camping">
+                    <div class="gallery-caption">
+                        <h3>Algonquin Camping</h3>
+                        <p>Summer 2024</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item camping" data-aos="zoom-in" data-aos-delay="250">
+                    <div class="gallery-badge">Camping</div>
+                    <img src="images/gallery/camping2.jpg" alt="Evening Campfire">
+                    <div class="gallery-caption">
+                        <h3>Evening Campfire</h3>
+                        <p>Summer 2024</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item camping" data-aos="zoom-in" data-aos-delay="350">
+                    <div class="gallery-badge">Camping</div>
+                    <img src="images/gallery/camping3.jpg" alt="Tent Setup">
+                    <div class="gallery-caption">
+                        <h3>Tent Setup Workshop</h3>
+                        <p>Spring 2024</p>
+                    </div>
+                </div>
+                
+                <!-- Water Activities Photos -->
+                <div class="gallery-item water" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="gallery-badge">Water</div>
+                    <img src="images/gallery/kayak1.jpg" alt="Grand River Kayaking">
+                    <div class="gallery-caption">
+                        <h3>Grand River Kayaking</h3>
+                        <p>Fall 2024</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item water" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="gallery-badge">Water</div>
+                    <img src="images/gallery/canoe1.jpg" alt="Canoeing Trip">
+                    <div class="gallery-caption">
+                        <h3>Canoeing Trip</h3>
+                        <p>Summer 2024</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item water" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="gallery-badge">Water</div>
+                    <img src="images/gallery/kayak2.jpg" alt="Lake Kayaking">
+                    <div class="gallery-caption">
+                        <h3>Lake Kayaking</h3>
+                        <p>Summer 2024</p>
+                    </div>
+                </div>
+                
+                <!-- Winter Photos -->
+                <div class="gallery-item winter" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="gallery-badge">Winter</div>
+                    <img src="images/gallery/winter1.jpg" alt="Snowshoeing Adventure">
+                    <div class="gallery-caption">
+                        <h3>Snowshoeing Adventure</h3>
+                        <p>Winter 2025</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item winter" data-aos="zoom-in" data-aos-delay="350">
+                    <div class="gallery-badge">Winter</div>
+                    <img src="images/gallery/winter2.jpg" alt="Winter Trail Hike">
+                    <div class="gallery-caption">
+                        <h3>Winter Trail Hike</h3>
+                        <p>January 2025</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item winter" data-aos="zoom-in" data-aos-delay="450">
+                    <div class="gallery-badge">Winter</div>
+                    <img src="images/gallery/winter3.jpg" alt="Ice Climbing">
+                    <div class="gallery-caption">
+                        <h3>Ice Climbing Workshop</h3>
+                        <p>February 2025</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Lightbox for image previews -->
+    <div class="lightbox">
+        <div class="lightbox-content">
+            <img src="" alt="" class="lightbox-img">
+            <button class="lightbox-close"><i class="fas fa-times"></i></button>
+            <div class="lightbox-caption">
+                <h3></h3>
+                <p></p>
+            </div>
+            <button class="lightbox-nav lightbox-prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="lightbox-nav lightbox-next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section" data-aos="fade-up">
+                    <h3>Conestoga Outdoors Club</h3>
+                    <p>Bringing adventure to campus since 2010</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section" data-aos="fade-up" data-aos-delay="100">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section" data-aos="fade-up" data-aos-delay="200">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-envelope"></i> outdoorsclub@conestoga.ca</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Student Center, Room 203</p>
+                    <p><i class="fas fa-clock"></i> Meetings: Thursdays at 5 PM</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Conestoga Outdoors Club. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    
+    <!-- Gallery and Lightbox functionality -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Gallery filtering functionality
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const galleryItems = document.querySelectorAll('.gallery-item');
+            
+            filterButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    // Remove active class from all buttons
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    
+                    // Add active class to clicked button
+                    button.classList.add('active');
+                    
+                    // Get filter value
+                    const filterValue = button.getAttribute('data-filter');
+                    
+                    // Filter gallery items with animation
+                    galleryItems.forEach(item => {
+                        if (filterValue === 'all' || item.classList.contains(filterValue)) {
+                            item.style.display = 'block';
+                            setTimeout(() => {
+                                item.style.opacity = '1';
+                                item.style.transform = 'scale(1)';
+                            }, 50);
+                        } else {
+                            item.style.opacity = '0';
+                            item.style.transform = 'scale(0.8)';
+                            setTimeout(() => {
+                                item.style.display = 'none';
+                            }, 300);
+                        }
+                    });
+                });
+            });
+            
+            // Lightbox functionality
+            const lightbox = document.querySelector('.lightbox');
+            const lightboxImg = document.querySelector('.lightbox-img');
+            const lightboxClose = document.querySelector('.lightbox-close');
+            const lightboxCaption = document.querySelector('.lightbox-caption');
+            const lightboxPrev = document.querySelector('.lightbox-prev');
+            const lightboxNext = document.querySelector('.lightbox-next');
+            
+            let currentIndex = 0;
+            const visibleItems = () => Array.from(galleryItems).filter(item => item.style.display !== 'none');
+            
+            // Open lightbox when clicking on gallery item
+            galleryItems.forEach(item => {
+                item.addEventListener('click', () => {
+                    const visible = visibleItems();
+                    currentIndex = visible.indexOf(item);
+                    
+                    const img = item.querySelector('img');
+                    const caption = item.querySelector('.gallery-caption');
+                    
+                    lightboxImg.src = img.src;
+                    lightboxImg.alt = img.alt;
+                    lightboxCaption.querySelector('h3').textContent = caption.querySelector('h3').textContent;
+                    lightboxCaption.querySelector('p').textContent = caption.querySelector('p').textContent;
+                    
+                    lightbox.classList.add('active');
+                    document.body.style.overflow = 'hidden'; // Prevent scrolling when lightbox is open
+                });
+            });
+            
+            // Close lightbox
+            lightboxClose.addEventListener('click', () => {
+                lightbox.classList.remove('active');
+                document.body.style.overflow = ''; // Re-enable scrolling
+            });
+            
+            // Close lightbox on outside click
+            lightbox.addEventListener('click', (e) => {
+                if (e.target === lightbox) {
+                    lightbox.classList.remove('active');
+                    document.body.style.overflow = '';
+                }
+            });
+            
+            // Navigate to previous image
+            lightboxPrev.addEventListener('click', () => {
+                const visible = visibleItems();
+                currentIndex = (currentIndex - 1 + visible.length) % visible.length;
+                updateLightboxContent(visible[currentIndex]);
+            });
+            
+            // Navigate to next image
+            lightboxNext.addEventListener('click', () => {
+                const visible = visibleItems();
+                currentIndex = (currentIndex + 1) % visible.length;
+                updateLightboxContent(visible[currentIndex]);
+            });
+            
+            // Keyboard navigation
+            document.addEventListener('keydown', (e) => {
+                if (!lightbox.classList.contains('active')) return;
+                
+                const visible = visibleItems();
+                
+                if (e.key === 'ArrowLeft') {
+                    currentIndex = (currentIndex - 1 + visible.length) % visible.length;
+                    updateLightboxContent(visible[currentIndex]);
+                } else if (e.key === 'ArrowRight') {
+                    currentIndex = (currentIndex + 1) % visible.length;
+                    updateLightboxContent(visible[currentIndex]);
+                } else if (e.key === 'Escape') {
+                    lightbox.classList.remove('active');
+                    document.body.style.overflow = '';
+                }
+            });
+            
+            // Update lightbox content
+            function updateLightboxContent(item) {
+                const img = item.querySelector('img');
+                const caption = item.querySelector('.gallery-caption');
+                
+                // Fade out
+                lightboxImg.style.opacity = '0';
+                lightboxCaption.style.opacity = '0';
+                
+                // Update content after a short delay
+                setTimeout(() => {
+                    lightboxImg.src = img.src;
+                    lightboxImg.alt = img.alt;
+                    lightboxCaption.querySelector('h3').textContent = caption.querySelector('h3').textContent;
+                    lightboxCaption.querySelector('p').textContent = caption.querySelector('p').textContent;
+                    
+                    // Fade in
+                    lightboxImg.style.opacity = '1';
+                    lightboxCaption.style.opacity = '1';
+                }, 300);
+            }
+            
+            // Add lazy loading for gallery images
+            const lazyLoadImages = () => {
+                const imageObserver = new IntersectionObserver((entries, observer) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            const img = entry.target;
+                            const src = img.getAttribute('data-src');
+                            
+                            if (src) {
+                                img.src = src;
+                                img.removeAttribute('data-src');
+                                img.parentElement.querySelector('.gallery-placeholder')?.remove();
+                            }
+                            
+                            observer.unobserve(img);
+                        }
+                    });
+                });
+                
+                document.querySelectorAll('.gallery-item img[data-src]').forEach(img => {
+                    imageObserver.observe(img);
+                });
+            };
+            
+            // Call lazy loading function
+            lazyLoadImages();
+            
+            // Preload adjacent images when viewing in lightbox for smoother experience
+            function preloadAdjacentImages(index) {
+                const visible = visibleItems();
+                const prevIndex = (index - 1 + visible.length) % visible.length;
+                const nextIndex = (index + 1) % visible.length;
+                
+                const preloadImage = (item) => {
+                    const img = item.querySelector('img');
+                    const src = img.getAttribute('data-src') || img.src;
+                    
+                    if (src) {
+                        const preloader = new Image();
+                        preloader.src = src;
+                    }
+                };
+                
+                preloadImage(visible[prevIndex]);
+                preloadImage(visible[nextIndex]);
+            }
+        });
+    </script>
+</body>
+</html>
